@@ -85,10 +85,10 @@ T_ss = 296.6;
 y_ss = [Ca_ss;T_ss];
 
 % Open Loop Step Change
-u = 220;
+u = 305;
 
 % Final Time (sec)
-tf = 5;
+tf = 10;
 
 [t_ode15s,y] = ode15s('cstr1',[0.25 tf],y_ss);
 
